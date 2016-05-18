@@ -18,6 +18,7 @@ class JTableObserverStore extends JTableObserver
      * @param array $params
      * @return JTableObserverStore
      */
+    //TODO adjust typeAlias
     public static function createObserver(JObservableInterface $observableObject, $params = array())
     {
         $typeAlias = $params['typeAlias'];

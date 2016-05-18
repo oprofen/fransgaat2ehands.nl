@@ -5,14 +5,12 @@
 				name="search"
 				type="text"
 				label="COM_BOOKSTORE_FILTER_SEARCH_DESC"
-				description="COM_BOOKSTORE_FILTER_SEARCH_DESC"
 				hint="JSEARCH_FILTER"
 		/>
 		<field
 				name="published"
 				type="status"
 				label="COM_BOOKSTORE_FILTER_PUBLISHED"
-				description="COM_BOOKSTORE_FILTER_PUBLISHED_DESC"
 				onchange="this.form.submit();"
 		>
 			<option value="">JOPTION_SELECT_PUBLISHED</option>
@@ -23,7 +21,6 @@
 				name="author_id"
 				type="author"
 				label="COM_BOOKSTORE_FILTER_AUTHOR"
-				description="COM_BOOKSTORE_FILTER_AUTHOR_DESC"
 				onchange="this.form.submit();"
 		>
 			<option value="">JOPTION_SELECT_AUTHOR</option>
@@ -33,7 +30,6 @@
 				type="text"
 				filter="FLOAT"
 				label="COM_BOOKSTORE_TABLE_FILTER_FROM_PRICE_LABEL"
-				description="COM_BOOKSTORE_TABLE_FILTER_FROM_PRICE_LABEL"
 				onchange="(function(context){setTimeout(function(){context.form.submit()}, 2000);})(this);"
 				hint="COM_BOOKSTORE_TABLE_FILTER_FROM_PRICE_LABEL"
 		/>
@@ -42,7 +38,6 @@
 				type="text"
 				filter="FLOAT"
 				label="COM_BOOKSTORE_TABLE_FILTER_TO_PRICE_LABEL"
-				description="COM_BOOKSTORE_TABLE_FILTER_TO_PRICE_LABEL"
 				hint="COM_BOOKSTORE_TABLE_FILTER_TO_PRICE_LABEL"
 				onchange="(function(context){setTimeout(function(){context.form.submit()}, 2000);})(this);"
 		/>
@@ -79,7 +74,6 @@
 				class="input-mini"
 				default="25"
 				label="COM_BOOKSTORE_LIST_LIMIT"
-				description="COM_BOOKSTORE_LIST_LIMIT_DESC"
 				onchange="this.form.submit();"
 		/>
 	</fields>

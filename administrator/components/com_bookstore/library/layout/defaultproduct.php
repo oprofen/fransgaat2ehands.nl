@@ -71,7 +71,7 @@ $assoc = JLanguageAssociations::isEnabled();
                             <?php echo JHtml::_('searchtools.sort', 'JAUTHOR', 'a.created_by', $listDirn, $listOrder); ?>
                         </th>
                         <th width="10%" class="nowrap hidden-phone">
-                            <?php echo JHtml::_('searchtools.sort', 'COM_BOOKSTORE_BOOKS_FIELD_SELLING_PRICE_LABEL', 'a.selling_price', $listDirn, $listOrder); ?>
+                            <?php echo JHtml::_('searchtools.sort', 'COM_'. $this->nameComponent .'_'. $this->nameItems .'_FIELD_SELLING_PRICE_LABEL', 'a.selling_price', $listDirn, $listOrder); ?>
                         </th>
                         <th width="10%" class="nowrap hidden-phone">
                             <?php echo JHtml::_('searchtools.sort', 'JDATE', 'a.created', $listDirn, $listOrder); ?>

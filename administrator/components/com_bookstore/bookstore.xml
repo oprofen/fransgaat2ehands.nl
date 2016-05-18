@@ -39,6 +39,8 @@
 			<menu link="option=com_bookstore&amp;view=illistrators">COM_BOOKSTORE_ILLISTRATORS</menu>
 			<menu link="option=com_bookstore&amp;view=object_types">COM_BOOKSTORE_OBJECT_TYPES</menu>
 			<menu link="option=com_bookstore&amp;view=purchase_codes">COM_BOOKSTORE_PURCHASE_CODES</menu>
+			<menu link="option=com_bookstore&amp;view=languages">COM_BOOKSTORE_LANGUAGES</menu>
+			<menu link="option=com_bookstore&amp;view=countries">COM_BOOKSTORE_COUNTRIES</menu>
 		</submenu>
 		<files folder="admin">
 			<filename>access.xml</filename>

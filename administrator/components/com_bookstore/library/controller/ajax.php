@@ -1,4 +1,5 @@
 <?php
+defined('_JEXEC') or die;
 /**
  * Created by PhpStorm.
  * User: Alexander

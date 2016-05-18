@@ -39,6 +39,8 @@
 			<menu link="option=com_dvdstore&amp;view=film_productions">COM_DVDSTORE_FILM_PRODUCTIONS</menu>
 			<menu link="option=com_dvdstore&amp;view=object_types">COM_DVDSTORE_OBJECT_TYPES</menu>
 			<menu link="option=com_dvdstore&amp;view=purchase_codes">COM_DVDSTORE_PURCHASE_CODES</menu>
+			<menu link="option=com_dvdstore&amp;view=languages">COM_DVDSTORE_LANGUAGES</menu>
+			<menu link="option=com_dvdstore&amp;view=countries">COM_DVDSTORE_COUNTRIES</menu>
 		</submenu>
 		<files folder="admin">
 			<filename>access.xml</filename>
