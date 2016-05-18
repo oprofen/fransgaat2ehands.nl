@@ -417,30 +417,7 @@
                 filter="INTEGER"
         >
         </field>
-        <field
-                name="illistrated"
-                label="COM_DVDSTORE_DVDS_FIELD_ILLISTRATED_LABEL"
-                type="radio"
-                filter="BOOLEAN"
-                class="btn-group btn-group-yesno"
-                default="0"
-        >
-            <option value="1">JYES</option>
-            <option value="0">JNO</option>
-        </field>
-        <field
-                name="illistrator"
-                type="ajaxlist"
-                label="COM_DVDSTORE_ILLISTRATOR_TITLE"
-                database="illistrator"
-                componentname="dvdstore"
-                plular_view_name="illistrators"
-                filter="INTEGER"
-                multilanguage="false"
 
-        >
-            <option value=""></option>
-        </field>
 
         <field
                 name="publication_date"

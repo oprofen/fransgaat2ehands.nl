@@ -15,7 +15,7 @@ $document = JFactory::getDocument();
 $document->addStylesheet('components/com_bookstore/assets/css/test.css', 'text/css');
 
 
-JLoader::register('StoreHelper', JPATH_ADMINISTRATOR . '/components/com_bookstore/library/helper/storehelper.php');
+JLoader::register('StoreHelper', JPATH_ADMINISTRATOR . '/components/com_bookstore/library/helper/store.php');
 
 
 

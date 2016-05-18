@@ -34,6 +34,7 @@
 			<menu link="option=com_dvdstore&amp;view=assessments">COM_DVDSTORE_ASSESSMENTS</menu>
 			<menu link="option=com_dvdstore&amp;view=locations">COM_DVDSTORE_LOCATIONS</menu>
 			<menu link="option=com_dvdstore&amp;view=actors">COM_DVDSTORE_ACTORS</menu>
+			<menu link="option=com_dvdstore&amp;view=translatorss">COM_DVDSTORE_TRANSLATORS</menu>
 			<menu link="option=com_dvdstore&amp;view=subcategories">COM_DVDSTORE_SUBCATEGORIES</menu>
 			<menu link="option=com_dvdstore&amp;view=directors">COM_DVDSTORE_DIRECTORS</menu>
 			<menu link="option=com_dvdstore&amp;view=film_productions">COM_DVDSTORE_FILM_PRODUCTIONS</menu>
