@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <field name="id" type="textnew"
+           class="readonly"
+           label="JGLOBAL_FIELD_ID_LABEL"
+           description="JGLOBAL_FIELD_ID_DESC"
+           size="10" default="0"
+           tabindex="-1"
+           readonly="true"/>
+
+    <field name="asset_id" type="hidden" filter="unset"/>
+    <fieldset name="firstTab_1" addfieldpath="/administrator/components/com_bookstore/library/model/fields">
+        <field name="title" type="textnew" label="JGLOBAL_TITLE"
+               description="JFIELD_TITLE_DESC"
+               size="70"
+               required="true"
+               autofocus="true"
+        />
+
+        <field
+                name="writer"
+                type="ajaxlist"
+                label="COM_BOOKSTORE_WRITER_TITLE"
+                multiple="true"
+                database="writer"
+                plular_view_name="writers"
+                filter="INTEGER"
+                componentname="bookstore"
+                multilanguage="false"
+
+        >
+            <option value=""></option>
+        </field>
+        <field
+                name="isbn10"
+                label="COM_BOOKSTORE_BOOKS_FIELD_ISBN10_LABEL"
+                type="fourtext"
+                maxlength="13"
+                filter="ALNUM"
+                class="span7 zeromargin"
+                controlclass="span6 zeromargin"
+                labelclass="label-width"
+
+        >
+        </field>
+        <field
+                name="isbn13"
+                label="COM_BOOKSTORE_BOOKS_FIELD_ISBN13_LABEL"
+                type="fourtext"
+                maxlength="13"
+                filter="INTEGER"
+                class="span6 zeromargin"
+                controlclass="span6 zeromargin"
+                labelclass="label-width-2-1"
+                after="COM_BOOKSTORE_BOOKS_FIELD_ISBN13_AFTER"
+
+        >
+        </field>
+        <field
+                name="publisher"
+                type="ajaxlist"
+                label="COM_BOOKSTORE_PUBLISHER_TITLE"
+                database="publisher"
+                plular_view_name="publishers"
+                filter="INTEGER"
+                multiple="true"
+                componentname="bookstore"
+                multilanguage="false"
+        >
+            <option value=""></option>
+        </field>
+        <field
+                name="print"
+                label="COM_BOOKSTORE_BOOKS_FIELD_PRINT_LABEL"
+                type="fourtext"
+                maxlength="20"
+                filter="STRING"
+                class="span7 zeromargin"
+                controlclass="span6 zeromargin"
+                labelclass="label-width"
+        >
+        </field>
+        <field
+                name="pages"
+                label="COM_BOOKSTORE_BOOKS_FIELD_PAGES_LABEL"
+                type="fourtext"
+                filter="INTEGER"
+                maxlength="10"
+                class="span6 zeromargin"
+                controlclass="span6 zeromargin"
+                labelclass="label-width-2"
+        >
+        </field>
+        <field
+                name="year_issue"
+                label="COM_BOOKSTORE_BOOKS_FIELD_YEAR_ISSUE_LABEL"
+                type="fourtext"
+                maxlength="4"
+                filter="INTEGER"
+                class="span7 zeromargin"
+                controlclass="span6 zeromargin"
+                labelclass="label-width"
+        >
+        </field>
+        <field
+                name="year_original"
+                label="COM_BOOKSTORE_BOOKS_FIELD_YEAR_ORIGINAL_LABEL"
+                type="fourtext"
+                maxlength="4"
+                filter="INTEGER"
+                class="span6 zeromargin"
+                controlclass="span6 zeromargin"
+                labelclass="label-width-2"
+        >
+        </field>
+        <field
+                name="translator"
+                type="ajaxlist"
+                label="COM_BOOKSTORE_TRANSLATOR_TITLE"
+                database="translator"
+                multiple="true"
+                plular_view_name="translators"
+                filter="INTEGER"
+                componentname="bookstore"
+                multilanguage="false"
+
+        >
+            <option value=""></option>
+        </field>
+
+    </fieldset >
+    <fieldset name="firstTab_2" addfieldpath="/administrator/components/com_bookstore/library/model/fields">
+
+
+        <field
+                name="object_type"
+                type="ajaxlist"
+                label="COM_BOOKSTORE_OBJECT_TYPE_TITLE"
+                multiple="true"
+                database="object_type"
+                plular_view_name="object_types"
+                filter="INTEGER"
+                componentname="bookstore"
+                multilanguage="true"
+        >
+            <option value=""></option>
+        </field>
+
+
+        <field
+                name="summary"
+                label="COM_BOOKSTORE_BOOKS_FIELD_SUMMARY_LABEL"
+                type="textareaeditor"
+                rows="4"
+                cols="5"
+                filter="RAW"
+        >
+        </field>
+        <field
+                name="overall_assessment"
+                type="list"
+                label="COM_BOOKSTORE_BOOKS_FIELD_OVERALL_ASSESSMENT_LABEL"
+                required="true"
+                filter="INTEGER"
+                maxlength="2"
+        >
+            <option value=""></option>
+            <option value="1">COM_BOOKSTORE_BOOKS_FIELD_OVERALL_ASSESSMENT_NEW</option>
+            <option value="2">COM_BOOKSTORE_BOOKS_FIELD_OVERALL_ASSESSMENT_AS_GOOD_AS_NEW</option>
+            <option value="4">COM_BOOKSTORE_BOOKS_FIELD_OVERALL_ASSESSMENT_GOOD</option>
+            <option value="3">COM_BOOKSTORE_BOOKS_FIELD_OVERALL_ASSESSMENT_VERY_GOOD</option>
+            <option value="5">COM_BOOKSTORE_BOOKS_FIELD_OVERALL_ASSESSMENT_FAIR</option>
+        </field>
+        <field
+                name="assessment"
+                type="ajaxlist"
+                label="COM_BOOKSTORE_ASSESSMENT_TITLE"
+                multiple="true"
+                database="assessment"
+                plular_view_name="assessments"
+                filter="INTEGER"
+                componentname="bookstore"
+                multilanguage="true"
+        >
+            <option value=""></option>
+        </field>
+
+
+        <field
+                name="subcategory"
+                type="ajaxlist"
+                label="COM_BOOKSTORE_SUBCATEGORIE_TITLE"
+                multiple="true"
+                database="subcategory"
+                plular_view_name="subcategories"
+                filter="INTEGER"
+                componentname="bookstore"
+                multilanguage="true"
+        >
+            <option value=""></option>
+        </field>
+        <field
+                name="book_language"
+                type="ajaxlist"
+                label="COM_BOOKSTORE_LANGUAGE_TITLE"
+                default="15"
+                filter="INTEGER"
+                maxlength="3"
+                database="language"
+                plular_view_name="languages"
+                componentname="bookstore"
+                multilanguage="true"
+        >
+            <option value=""></option>
+        </field>
+        <field name="images"
+               type="repeatableimg"
+               filter="raw"
+               label="COM_BOOKSTORE_BOOKS_FIELD_IMAGES_LABEL"
+               icon="images">
+            <fieldset hidden="true" name="images_modal" repeat="true">
+                <field
+                        name="image"
+                        type="media"
+                        label="COM_BOOKSTORE_BOOKS_FIELD_IMAGE_LABEL"
+                        preview="true"
+                        directory="localhost\fransgaat2ehands.nl"
+                />
+
+            </fieldset>
+        </field>
+    </fieldset>
+    <fieldset name="firstTab_3" addfieldpath="/administrator/components/com_bookstore/library/model/fields">
+        <field
+                name="width"
+                type="fourtext"
+                filter="INTEGER"
+                required="true"
+                maxlength="5"
+                hiddenLabel="true"
+                before="COM_BOOKSTORE_BOOKS_FIELD_WIDTH_BEFORE"
+                after="COM_BOOKSTORE_BOOKS_FIELD_WIDTH_AFTER"
+                class="span5"
+                controlclass="span3 zeromargin input-prepend input-append cuatro"
+        >
+        </field>
+        <field
+                name="length"
+                type="fourtext"
+                filter="INTEGER"
+                hiddenLabel="true"
+                before="COM_BOOKSTORE_BOOKS_FIELD_LENGTH_BEFORE"
+                after="COM_BOOKSTORE_BOOKS_FIELD_LENGTH_AFTER"
+                class="span5"
+                controlclass="span3 zeromargin input-prepend input-append cuatro"
+                required="true"
+                maxlength="5"
+        >
+        </field>
+        <field
+                name="depth"
+                type="fourtext"
+                filter="INTEGER"
+                required="true"
+                maxlength="5"
+                hiddenLabel="true"
+                before="COM_BOOKSTORE_BOOKS_FIELD_DEPTH_BEFORE"
+                after="COM_BOOKSTORE_BOOKS_FIELD_DEPTH_AFTER"
+                class="span5"
+                controlclass="span3 zeromargin input-prepend input-append cuatro"
+        >
+        </field>
+        <field
+                name="weigth"
+                type="fourtext"
+                filter="INTEGER"
+                required="true"
+                maxlength="5"
+                hiddenLabel="true"
+                before="COM_BOOKSTORE_BOOKS_FIELD_WEIGHT_BEFORE"
+                after="COM_BOOKSTORE_BOOKS_FIELD_WEIGHT_AFTER"
+                class="span5"
+                controlclass="span3 zeromargin input-prepend input-append cuatro"
+        >
+        </field>
+
+
+
+
+        <field
+                name="selling_price"
+                label="COM_BOOKSTORE_BOOKS_FIELD_SELLING_PRICE_LABEL"
+                type="fourtext"
+                filter="FLOAT"
+                class="span12"
+                div_class_input="controls"
+                before="COM_BOOKSTORE_BOOKS_FIELD_PRICE_BEFORE"
+                controlclass="input-prepend "
+                maxlength="7"
+        >
+        </field>
+        <field
+                name="puchasecode"
+                label="COM_BOOKSTORE_BOOKS_FIELD_PUCHASECODE_LABEL"
+                type="ajaxlist"
+                database="purchase_code"
+                plular_view_name="purchase_codes"
+                filter="INTEGER"
+                componentname="bookstore"
+                multilanguage="false"
+
+        >
+            <option value=""></option>
+        </field>
+        <field
+                name="location"
+                type="ajaxlist"
+                label="COM_BOOKSTORE_LOCATION_TITLE"
+                database="location"
+                plular_view_name="locations"
+                filter="INTEGER"
+                componentname="bookstore"
+                multilanguage="true"
+        >
+            <option value=""></option>
+        </field>
+
+
+        <field
+                name="country_publication"
+                type="ajaxlist"
+                label="COM_BOOKSTORE_BOOKS_FIELD_COUNTRY_PUBLICATION_LABEL"
+                filter="INTEGER"
+                maxlength="3"
+				default="2"
+                database="country"
+                plular_view_name="countries"
+                componentname="bookstore"
+                multilanguage="true"
+        >
+            <option value=""></option>
+
+        </field>
+        <field
+                name="country_production"
+                type="ajaxlist"
+                label="COM_BOOKSTORE_BOOKS_FIELD_COUNTRY_PRODUCTION_LABEL"
+                filter="INTEGER"
+                maxlength="3"
+				default="1"
+                database="country"
+                plular_view_name="countries"
+                componentname="bookstore"
+                multilanguage="true"
+        >
+            <option value=""></option>
+        </field>
+
+
+    </fieldset>
+
+
+    <fieldset name="SecondTab_1" addfieldpath="/administrator/components/com_bookstore/library/model/fields">
+        <field
+                name="undertitle"
+                label="COM_BOOKSTORE_BOOKS_FIELD_UNDERTITLE_LABEL"
+                type="text"
+                maxlength="70"
+                filter="STRING"
+        >
+        </field>
+        <field
+                name="original_title"
+                label="COM_BOOKSTORE_BOOKS_FIELD_ORIGINAL_TITLE_LABEL"
+                type="text"
+                maxlength="70"
+                filter="STRING"
+        >
+        </field>
+        <field
+                name="ean13"
+                label="COM_BOOKSTORE_BOOKS_FIELD_EAN13_LABEL"
+                filter="INTEGER"
+                type="fourtext"
+                maxlength="13"
+                labelclass="label-width-2-1"
+                after="COM_BOOKSTORE_BOOKS_FIELD_EAN13_AFTER"
+                div_class_input="controls"
+        >
+        </field>
+        <field
+                name="upc12"
+                label="COM_BOOKSTORE_BOOKS_FIELD_UPC12_LABEL"
+                type="text"
+                maxlength="12"
+                filter="INTEGER"
+        >
+        </field>
+        <field
+                name="illustrated"
+                label="COM_BOOKSTORE_BOOKS_FIELD_ILLISTRATED_LABEL"
+                type="radio"
+                filter="interval"
+                class="btn-group btn-group-yesno"
+                default="0"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field
+                name="illistrator"
+                type="ajaxlist"
+                label="COM_BOOKSTORE_ILLISTRATOR_TITLE"
+                database="illistrator"
+                plular_view_name="illistrators"
+                filter="INTEGER"
+                componentname="bookstore"
+                multilanguage="false"
+
+        >
+            <option value=""></option>
+        </field>
+
+        <field
+                name="publication_date"
+                label="COM_BOOKSTORE_BOOKS_FIELD_PUBLICATION_DATE_LABEL"
+                type="calendar"
+        >
+        </field>
+        <field
+                name="serie"
+                label="COM_BOOKSTORE_BOOKS_FIELD_SERIE_LABEL"
+                type="text"
+                maxlength="30"
+                filter="STRING"
+        >
+        </field>
+        <field
+                name="serie_number"
+                label="COM_BOOKSTORE_BOOKS_FIELD_SERIE_NUMBER_LABEL"
+                type="text"
+                maxlength="5"
+                filter="INTEGER"
+        >
+        </field>
+        <field
+                name="blurb"
+                label="COM_BOOKSTORE_BOOKS_FIELD_BLURB_LABEL"
+                type="textareaeditor"
+                rows="4"
+                cols="5"
+                filter="RAW"
+        >
+        </field>
+    </fieldset>
+    <fieldset name="SecondTab_2" addfieldpath="/administrator/components/com_bookstore/library/model/fields">
+        <field
+                name="catalog_number"
+                label="COM_BOOKSTORE_BOOKS_FIELD_CATALOG_NUMBER_LABEL"
+                type="text"
+                maxlength="20"
+                filter="STRING"
+        >
+        </field>
+        <field
+                name="purchase_serialnumber"
+                label="COM_BOOKSTORE_BOOKS_FIELD_PURCHASE_SERIALNUMBER_LABEL"
+                type="text"
+                filter="INTEGER"
+                maxlength="10"
+        >
+        </field>
+        <field
+                name="barcode"
+                label="COM_BOOKSTORE_BOOKS_FIELD_BARCODE_LABEL"
+                type="text"
+                maxlength="20"
+                filter="STRING"
+        >
+        </field>
+
+        <field
+                name="edition"
+                label="COM_BOOKSTORE_BOOKS_FIELD_EDITION_LABEL"
+                type="text"
+                maxlength="20"
+                filter="STRING"
+        >
+        </field>
+        <field
+                name="original_retailprice"
+                label="COM_BOOKSTORE_BOOKS_FIELD_ORIGINAL_RETAILPRICE_LABEL"
+                type="fourtext"
+                filter="FLOAT"
+                class="span12"
+                div_class_input="controls"
+                before="COM_BOOKSTORE_BOOKS_FIELD_PRICE_BEFORE"
+                controlclass="input-prepend "
+                maxlength="7"
+        >
+        </field>
+        <field
+                name="date_original_retailprice"
+                label="COM_BOOKSTORE_BOOKS_FIELD_DATE_ORIGINAL_RETAILPRICE_LABEL"
+                type="calendar"
+        >
+        </field>
+        <field
+                name="particulars_en"
+                label="COM_BOOKSTORE_BOOKS_FIELD_PARTICULARS_EN_LABEL"
+                type="textarea"
+                maxlength="200"
+                rows="3"
+                cols="5"
+                filter="STRING"
+        >
+        </field>
+        <field
+                name="particulars_nl"
+                label="COM_BOOKSTORE_BOOKS_FIELD_PARTICULARS_NL_LABEL"
+                type="textarea"
+                maxlength="200"
+                rows="3"
+                cols="5"
+                filter="STRING"
+        >
+        </field>
+    </fieldset>
+    <fieldset name="SecondTab_3" addfieldpath="/administrator/components/com_bookstore/library/model/fields">
+
+
+        <field
+                name="extra_information_en"
+                label="COM_BOOKSTORE_BOOKS_FIELD_EXTRA_INFORMATION_EN_LABEL"
+                maxlength="200"
+                type="textarea"
+                rows="3"
+                cols="5"
+                filter="STRING"
+        >
+        </field>
+        <field
+                name="extra_information_nl"
+                label="COM_BOOKSTORE_BOOKS_FIELD_EXTRA_INFORMATION_NL_LABEL"
+                maxlength="200"
+                type="textarea"
+                rows="3"
+                cols="5"
+                filter="STRING"
+        >
+        </field>
+        <field
+                name="review_en"
+                label="COM_BOOKSTORE_BOOKS_FIELD_REVIEW_EN_LABEL"
+                type="textareaeditor"
+                filter="RAW"
+                rows="4"
+                cols="5"
+
+        >
+        </field>
+        <field
+                name="review_nl"
+                label="COM_BOOKSTORE_BOOKS_FIELD_REVIEW_NL_LABEL"
+                type="textareaeditor"
+                filter="RAW"
+                rows="4"
+                cols="5"
+
+        >
+        </field>
+
+    </fieldset>
+    <fieldset name="ThirdTab" addfieldpath="/administrator/components/com_bookstore/library/model/fields">
+        <field name="id" type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+               description="JGLOBAL_FIELD_ID_DESC" size="10" default="0"
+               readonly="true"/>
+        <field
+                name="published"
+                type="list"
+                label="JSTATUS"
+                description="JFIELD_PUBLISHED_DESC"
+                class="chzn-color-state"
+                size="1"
+                default="1"
+                filter="interval"
+        >
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+            <option value="2">JARCHIVED</option>
+            <option value="-2">JTRASHED</option>
+        </field>
+        <field name="checked_out" type="hidden" filter="unset"/>
+        <field
+                name="created"
+                type="calendar"
+                label="JGLOBAL_FIELD_CREATED_LABEL"
+                description="JGLOBAL_FIELD_CREATED_DESC"
+                format="%Y-%m-%d %H:%M:%S"
+                filter="user_utc"
+        />
+        
+        <field
+                name="created_by"
+                type="user"
+                label="JGLOBAL_FIELD_CREATED_BY_LABEL"
+                description="JGLOBAL_FIELD_CREATED_BY_DESC"
+        />
+        <field
+                name="modified"
+                type="calendar"
+                label="JGLOBAL_FIELD_MODIFIED_LABEL"
+                description="JGLOBAL_FIELD_MODIFIED_LABEL"
+                format="%Y-%m-%d %H:%M:%S"
+                class="readonly"
+        />
+        <field
+                name="modified_by"
+                type="user"
+                label="JGLOBAL_FIELD_MODIFIED_BY_LABEL"
+                description="JGLOBAL_FIELD_MODIFIED_BY_DESC"
+        />
+        <field
+                name="publish_up"
+                type="calendar"
+                label="JGLOBAL_FIELD_PUBLISH_UP_LABEL"
+                description="JGLOBAL_FIELD_PUBLISH_UP_DESC"
+                class="inputbox" format="%Y-%m-%d %H:%M:%S"
+                labelclass="control-label"
+                filter="user_utc"
+        />
+        <field
+                name="publish_down"
+                type="calendar"
+                label="JGLOBAL_FIELD_PUBLISH_DOWN_LABEL"
+                description="JGLOBAL_FIELD_PUBLISH_DOWN_DESC"
+                class="inputbox"
+                format="%Y-%m-%d %H:%M:%S"
+                labelclass="control-label"
+                filter="user_utc"
+        />
+
+    </fieldset>
+    <field name="rules"
+           type="rules"
+           label="JFIELD_RULES_LABEL"
+           translate_label="false"
+           filter="rules"
+           component="com_bookstore"
+           section="book"
+           validate="rules"
+    />
+
+</form>

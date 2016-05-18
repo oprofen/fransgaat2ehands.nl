@@ -1,0 +1,24 @@
+.main-product  .controls {
+    margin-left: 140px !important;
+}
+.main-product  .control-group {
+    margin-bottom: 5px !important;
+}
+.zeromargin {
+    margin:0px !important;
+}
+.label-width {
+     width:65px;
+ }
+.label-width-2 {
+    width:80px;
+}
+.label-width-2-1 {
+    width:50px;
+}
+div.cuatro {
+    width:25% !important;
+}
+/*input[value=""]{
+    background-color:red !important;
+}*/

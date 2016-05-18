@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<field name="asset_id" type="hidden" filter="unset" />
+	<fieldset name="english">
+		<field name="title_en" type="text"
+			   label="COM_DVDSTORE_FIELD_TITLE_EN"
+			   size="40"
+			   required="true"/>
+	</fieldset>
+	<fieldset name="dutch">
+		<field name="title_nl" type="text"
+			   label="COM_DVDSTORE_FIELD_TITLE_NL"
+			   size="40"
+			   required="true"/>
+	</fieldset>
+	<fieldset>
+		<field name="id" type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			   description="JGLOBAL_FIELD_ID_DESC" size="10" default="0"
+			   readonly="true"/>
+
+
+
+
+
+
+
+
+
+		<field
+				name="buttonspacer"
+				description="JGLOBAL_ACTION_PERMISSIONS_DESCRIPTION"
+				type="spacer"/>
+
+		<field name="created" type="calendar" label="COM_DVDSTORE_FIELD_CREATED_LABEL"
+			   description="COM_DVDSTORE_FIELD_CREATED_DESC" size="22"
+			   format="%Y-%m-%d %H:%M:%S" filter="user_utc"
+		/>
+
+		<field name="created_by" type="user"
+			   label="COM_DVDSTORE_FIELD_CREATED_BY_LABEL" description="COM_DVDSTORE_FIELD_CREATED_BY_DESC"
+		/>
+
+
+		<field name="modified" type="calendar" class="readonly"
+			   label="JGLOBAL_FIELD_MODIFIED_LABEL" description="COM_DVDSTORE_FIELD_MODIFIED_DESC"
+			   size="22" readonly="true" format="%Y-%m-%d %H:%M:%S" filter="user_utc"/>
+
+		<field name="modified_by" type="user"
+			   label="JGLOBAL_FIELD_MODIFIED_BY_LABEL"
+			   class="readonly"
+			   readonly="true"
+			   filter="unset"
+		/>
+
+		<field name="checked_out" type="hidden" filter="unset"/>
+
+		<field name="checked_out_time" type="hidden" filter="unset"/>
+
+
+		<field name="ordering" type="text" label="JFIELD_ORDERING_LABEL"
+			   description="JFIELD_ORDERING_DESC" size="6"
+			   default="0"/>
+
+
+	</fieldset>
+	<field name="rules"
+		   type="rules"
+		   label="JFIELD_RULES_LABEL"
+		   translate_label="false"
+		   filter="rules"
+		   component="com_bookstore"
+		   section="location"
+		   validate="rules"
+	/>
+</form>

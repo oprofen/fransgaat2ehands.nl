@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.4" method="upgrade">
+	<name>com_bookstore</name>
+	<creationDate>2016 april 09</creationDate>
+	<author></author>
+	<authorEmail></authorEmail>
+	<authorUrl></authorUrl>
+	<copyright></copyright>
+	<license></license>
+	<version>1.0.0</version>
+	<description>COM_BOOKSTORE_XML_DESCRIPTION</description>
+	
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates</schemapath>
+		</schemas>
+	</update>
+	
+	<administration>
+		<menu link="index.php?option=com_bookstore">Bookstore</menu>
+		<submenu>
+			<menu link="option=com_bookstore&amp;view=books">COM_BOOKSTORE_BOOKS</menu>
+			<menu link="option=com_bookstore&amp;view=publishers">COM_BOOKSTORE_PUBLISHERS</menu>
+			<menu link="option=com_bookstore&amp;view=assessments">COM_BOOKSTORE_ASSESSMENTS</menu>
+			<menu link="option=com_bookstore&amp;view=locations">COM_BOOKSTORE_LOCATIONS</menu>
+			<menu link="option=com_bookstore&amp;view=writers">COM_BOOKSTORE_WRITERS</menu>
+			<menu link="option=com_bookstore&amp;view=subcategories">COM_BOOKSTORE_SUBCATEGORIES</menu>
+			<menu link="option=com_bookstore&amp;view=translators">COM_BOOKSTORE_TRANSLATORS</menu>
+			<menu link="option=com_bookstore&amp;view=illistrators">COM_BOOKSTORE_ILLISTRATORS</menu>
+			<menu link="option=com_bookstore&amp;view=object_types">COM_BOOKSTORE_OBJECT_TYPES</menu>
+			<menu link="option=com_bookstore&amp;view=purchase_codes">COM_BOOKSTORE_PURCHASE_CODES</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>bookstore.php</filename>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>library</folder>
+			<folder>sql</folder>
+			<folder>views</folder>
+			<languages folder="admin">
+				<language tag="en-GB">language/en-GB.com_bookstore.ini</language>
+				<language tag="en-GB">language/en-GB.com_bookstore.sys.ini</language>
+				<language tag="nl-NL">language/nl-NL.com_bookstore.ini</language>
+				<language tag="nl-NL">language/nl-NL.com_bookstore.sys.ini</language>
+			</languages>
+		</files>
+
+	</administration>
+	
+	<updateservers>
+	</updateservers>
+</extension>

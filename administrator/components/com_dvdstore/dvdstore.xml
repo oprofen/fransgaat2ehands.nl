@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.4" method="upgrade">
+	<name>com_dvdstore</name>
+	<creationDate>2016 april 09</creationDate>
+	<author></author>
+	<authorEmail></authorEmail>
+	<authorUrl></authorUrl>
+	<copyright></copyright>
+	<license></license>
+	<version>1.0.0</version>
+	<description>COM_DVDSTORE_XML_DESCRIPTION</description>
+	
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates</schemapath>
+		</schemas>
+	</update>
+	
+	<administration>
+		<menu link="index.php?option=com_dvdstore">dvdstore</menu>
+		<submenu>
+			<menu link="option=com_dvdstore&amp;view=dvds">COM_DVDSTORE_DVDS</menu>
+			<menu link="option=com_dvdstore&amp;view=publishers">COM_DVDSTORE_PUBLISHERS</menu>
+			<menu link="option=com_dvdstore&amp;view=assessments">COM_DVDSTORE_ASSESSMENTS</menu>
+			<menu link="option=com_dvdstore&amp;view=locations">COM_DVDSTORE_LOCATIONS</menu>
+			<menu link="option=com_dvdstore&amp;view=actors">COM_DVDSTORE_ACTORS</menu>
+			<menu link="option=com_dvdstore&amp;view=subcategories">COM_DVDSTORE_SUBCATEGORIES</menu>
+			<menu link="option=com_dvdstore&amp;view=directors">COM_DVDSTORE_DIRECTORS</menu>
+			<menu link="option=com_dvdstore&amp;view=film_productions">COM_DVDSTORE_FILM_PRODUCTIONS</menu>
+			<menu link="option=com_dvdstore&amp;view=object_types">COM_DVDSTORE_OBJECT_TYPES</menu>
+			<menu link="option=com_dvdstore&amp;view=purchase_codes">COM_DVDSTORE_PURCHASE_CODES</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>dvdstore.php</filename>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>library</folder>
+			<folder>sql</folder>
+			<folder>views</folder>
+			<languages folder="admin">
+				<language tag="en-GB">language/en-GB.com_dvdstore.ini</language>
+				<language tag="en-GB">language/en-GB.com_dvdstore.sys.ini</language>
+				<language tag="nl-NL">language/nl-NL.com_dvdstore.ini</language>
+				<language tag="nl-NL">language/nl-NL.com_dvdstore.sys.ini</language>
+			</languages>
+		</files>
+
+	</administration>
+	
+	<updateservers>
+	</updateservers>
+</extension>
