@@ -32,7 +32,7 @@ class StoreTableProduct extends StoreTable
     public function __construct(&$db)
     {
         parent::__construct($db);
-        JTableObserverStore::createObserver($this, array('typeAlias' => 'com_' . $this->nameComponent . '.' . $this->dataBaseName));
+        StoreObserver::createObserver($this, array('typeAlias' => 'com_' . $this->nameComponent . '.' . $this->dataBaseName));
 
 
     }

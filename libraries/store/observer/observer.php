@@ -9,9 +9,9 @@
 defined('JPATH_PLATFORM') or die;
 
 /**
- * Class JTableObserverStore
+ * Class StoreObserver
  */
-class JTableObserverStore extends JTableObserver
+class StoreObserver extends JTableObserver
 {
     /**
      * @param JObservableInterface $observableObject

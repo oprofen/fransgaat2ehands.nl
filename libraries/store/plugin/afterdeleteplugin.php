@@ -10,9 +10,9 @@ jimport('joomla.plugin');
 
 
 /**
- * Class AfterDeletePlugin
+ * Class StoreAfterDeletePlugin
  */
-class AfterDeletePlugin extends JPlugin
+class StoreAfterDeletePlugin extends JPlugin
 {
 
     /**
