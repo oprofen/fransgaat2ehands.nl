@@ -8,12 +8,12 @@
 defined("_JEXEC") or die("Restricted access");
 
 /**
- * Author table class.
+ * Translator table class.
  *
- * @package     Bookstore
+ * @package     Dvdstore
  * @subpackage  Tables
  */
-class DvdstoreTableFilm_production extends StoreTableMultilang
+class DvdstoreTableTranslator extends StoreTable
 {
 }
 ?>

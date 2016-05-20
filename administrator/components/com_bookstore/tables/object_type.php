@@ -13,7 +13,7 @@ defined("_JEXEC") or die("Restricted access");
  * @package     Bookstore
  * @subpackage  Tables
  */
-class BookstoreTableObject_type extends StoreMultilangTable
+class BookstoreTableObject_type extends StoreTableMultilang
 {
 }
 ?>

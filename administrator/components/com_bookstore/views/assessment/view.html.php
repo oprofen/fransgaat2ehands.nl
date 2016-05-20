@@ -14,7 +14,7 @@ defined("_JEXEC") or die("Restricted access");
  * @package     Bookstore
  * @subpackage  Views
  */
-class BookstoreViewAssessment extends StoreViewLegacySingular
+class BookstoreViewAssessment extends StoreViewLegacyMultilangSingular
 {
 }
 ?>

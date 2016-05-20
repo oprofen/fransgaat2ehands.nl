@@ -11,7 +11,7 @@ defined('_JEXEC') or die;
 
 
 /**
- * Item Model for a location item.
+ * Item Model for a object type item.
  *
  * @since  1.6
  */

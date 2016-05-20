@@ -10,12 +10,12 @@ defined("_JEXEC") or die("Restricted access");
 
 
 /**
- * List Model for writers.
+ * List Model for film productions.
  *
  * @package     Dvdstore
  * @subpackage  Models
  */
-class DvdstoreModelFilm_productions extends StoreModelList
+class DvdstoreModelFilm_productions extends StoreModelListMultiLang
 {
 }
 ?>

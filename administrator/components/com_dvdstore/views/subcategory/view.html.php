@@ -14,7 +14,7 @@ defined("_JEXEC") or die("Restricted access");
  * @package     Dvdstore
  * @subpackage  Views
  */
-class DvdstoreViewSubcategory extends StoreViewLegacySingular
+class DvdstoreViewSubcategory extends StoreViewLegacyMultilangSingular
 {
 }
 ?>

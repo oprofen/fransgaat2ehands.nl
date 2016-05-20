@@ -11,63 +11,63 @@
 		<action name="core.edit.own" title="JACTION_EDITOWN" description="JACTION_EDITOWN_COMPONENT_DESC" />
 	</section>
 	<section name="dvd">
-		<action name="core.delete" title="JACTION_DELETE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit" title="JACTION_EDIT" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
 	</section>
 	<section name="assessment">
-		<action name="core.delete" title="JACTION_DELETE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit" title="JACTION_EDIT" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
 	</section>
 	<section name="director">
-		<action name="core.delete" title="JACTION_DELETE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit" title="JACTION_EDIT" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
 	</section>
 	<section name="location">
-		<action name="core.delete" title="JACTION_DELETE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit" title="JACTION_EDIT" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
 	</section>
 	<section name="object_type">
-		<action name="core.delete" title="JACTION_DELETE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit" title="JACTION_EDIT" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
 	</section>
 	<section name="publisher">
-		<action name="core.delete" title="JACTION_DELETE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit" title="JACTION_EDIT" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
 	</section>
 	<section name="subcategory">
-		<action name="core.delete" title="JACTION_DELETE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit" title="JACTION_EDIT" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
 	</section>
 	<section name="actor">
-		<action name="core.delete" title="JACTION_DELETE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit" title="JACTION_EDIT" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
 	</section>
 	<section name="film_production">
-		<action name="core.delete" title="JACTION_DELETE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit" title="JACTION_EDIT" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
 	</section>
 	<section name="purchase_code">
-		<action name="core.delete" title="JACTION_DELETE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit" title="JACTION_EDIT" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
 	</section>
 	<section name="language">
-		<action name="core.delete" title="JACTION_DELETE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit" title="JACTION_EDIT" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
 	</section>
 	<section name="country">
-		<action name="core.delete" title="JACTION_DELETE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit" title="JACTION_EDIT" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
-		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_BOOKSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
 	</section>
 </access>

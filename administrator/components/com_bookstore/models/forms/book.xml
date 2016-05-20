@@ -9,7 +9,7 @@
            readonly="true"/>
 
     <field name="asset_id" type="hidden" filter="unset"/>
-    <fieldset name="firstTab_1" addfieldpath="/administrator/components/com_bookstore/library/model/fields">
+    <fieldset name="firstTab_1" addfieldpath="/libraries/store/model/fields">
         <field name="title" type="textnew" label="JGLOBAL_TITLE"
                description="JFIELD_TITLE_DESC"
                size="70"
@@ -129,7 +129,7 @@
         </field>
 
     </fieldset >
-    <fieldset name="firstTab_2" addfieldpath="/administrator/components/com_bookstore/library/model/fields">
+    <fieldset name="firstTab_2" addfieldpath="/libraries/store/model/fields">
 
 
         <field
@@ -230,7 +230,7 @@
             </fieldset>
         </field>
     </fieldset>
-    <fieldset name="firstTab_3" addfieldpath="/administrator/components/com_bookstore/library/model/fields">
+    <fieldset name="firstTab_3" addfieldpath="/libraries/store/model/fields">
         <field
                 name="width"
                 type="fourtext"
@@ -360,7 +360,7 @@
     </fieldset>
 
 
-    <fieldset name="SecondTab_1" addfieldpath="/administrator/components/com_bookstore/library/model/fields">
+    <fieldset name="SecondTab_1" addfieldpath="/libraries/store/model/fields">
         <field
                 name="undertitle"
                 label="COM_BOOKSTORE_BOOKS_FIELD_UNDERTITLE_LABEL"
@@ -453,7 +453,7 @@
         >
         </field>
     </fieldset>
-    <fieldset name="SecondTab_2" addfieldpath="/administrator/components/com_bookstore/library/model/fields">
+    <fieldset name="SecondTab_2" addfieldpath="/libraries/store/model/fields">
         <field
                 name="catalog_number"
                 label="COM_BOOKSTORE_BOOKS_FIELD_CATALOG_NUMBER_LABEL"
@@ -526,7 +526,7 @@
         >
         </field>
     </fieldset>
-    <fieldset name="SecondTab_3" addfieldpath="/administrator/components/com_bookstore/library/model/fields">
+    <fieldset name="SecondTab_3" addfieldpath="/libraries/store/model/fields">
 
 
         <field
@@ -571,7 +571,7 @@
         </field>
 
     </fieldset>
-    <fieldset name="ThirdTab" addfieldpath="/administrator/components/com_bookstore/library/model/fields">
+    <fieldset name="ThirdTab" addfieldpath="/libraries/store/model/fields">
         <field name="id" type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
                description="JGLOBAL_FIELD_ID_DESC" size="10" default="0"
                readonly="true"/>

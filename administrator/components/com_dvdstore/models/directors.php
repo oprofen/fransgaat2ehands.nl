@@ -12,7 +12,7 @@ defined("_JEXEC") or die("Restricted access");
 /**
  * List Model for directors.
  *
- * @package     Bookstore
+ * @package     Dvdstore
  * @subpackage  Models
  */
 class DvdstoreModelDirectors extends StoreModelList

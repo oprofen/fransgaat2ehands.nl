@@ -13,7 +13,7 @@ defined("_JEXEC") or die("Restricted access");
  * @package     Dvdstore
  * @subpackage  Tables
  */
-class DvdstoreTableObject_type extends StoreMultilangTable
+class DvdstoreTableObject_type extends StoreTableMultilang
 {
 }
 ?>

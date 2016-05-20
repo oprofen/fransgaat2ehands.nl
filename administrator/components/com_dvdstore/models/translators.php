@@ -10,12 +10,12 @@ defined("_JEXEC") or die("Restricted access");
 
 
 /**
- * List Model for writers.
+ * List Model for translators.
  *
- * @package     Bookstore
+ * @package     Dvdstore
  * @subpackage  Models
  */
-class BookstoreModelTranslators extends StoreModelList
+class DvdstoreModelTranslators extends StoreModelList
 {
 }
 ?>

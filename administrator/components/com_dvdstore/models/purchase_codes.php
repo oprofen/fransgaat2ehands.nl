@@ -12,10 +12,11 @@ defined("_JEXEC") or die("Restricted access");
 /**
  * List Model for purchase codes.
  *
- * @package     Bookstore
+ * @package     Dvdstore
  * @subpackage  Models
  */
-class BookstoreModelPurchase_codes extends StoreModelList
+class DvdstoreModelPurchase_codes extends StoreModelList
 {
+    public $dbName = 'bookstore_purchase_code';
 }
 ?>

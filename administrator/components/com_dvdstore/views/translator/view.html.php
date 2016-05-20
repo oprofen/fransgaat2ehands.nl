@@ -9,12 +9,12 @@ defined("_JEXEC") or die("Restricted access");
 
 
 /**
- * Country item view class.
+ * Translator item view class.
  *
- * @package     Bookstore
+ * @package     Dvdstore
  * @subpackage  Views
  */
-class BookstoreViewCountry extends StoreViewLegacyMultilangSingular
+class DvdstoreViewTranslator extends StoreViewLegacySingular
 {
 }
 ?>

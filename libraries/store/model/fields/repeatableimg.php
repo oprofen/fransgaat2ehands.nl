@@ -35,7 +35,7 @@ class JFormFieldRepeatableimg extends JFormFieldRepeatable
     {
 
        $document = JFactory::getDocument();
-        $document->addScript('components/com_bookstore/assets/js/imagefield.js');
+        $document->addScript(JURI::root(). 'media/store/assets/js/imagefield.js');
         $script = [];
         $script[] = " jQuery(function () { ";
         $script[] = "var images = jQuery.parseJSON(jQuery('#" . $this->id . "').val()); ";

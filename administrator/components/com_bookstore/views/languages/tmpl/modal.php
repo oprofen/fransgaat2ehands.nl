@@ -6,5 +6,5 @@
  */
 
 defined("_JEXEC") or die("Restricted access");
-require_once (JPATH_ADMINISTRATOR . '/components/com_bookstore/library/layout/modallist.php');
+require (JPATH_LIBRARIES . '/store/layout/modallist.php');
 ?>

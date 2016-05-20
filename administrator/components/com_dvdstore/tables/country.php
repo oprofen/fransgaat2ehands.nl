@@ -13,7 +13,7 @@ defined("_JEXEC") or die("Restricted access");
  * @package     Dvdstore
  * @subpackage  Tables
  */
-class DvdstoreTableCountry extends StoreMultilangTable
+class DvdstoreTableCountry extends StoreTableMultilang
 {
     protected $dbName = 'bookstore_country';
     protected $assetNamePrefix = 'bookstore.country';

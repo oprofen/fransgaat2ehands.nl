@@ -24,17 +24,26 @@ class StoreViewLegacySingular extends JViewLegacy
     protected $nameItem;
     protected $nameItems;
     public $componentName;
+    
+    public function __construct(array $config)
+    {
+        parent::__construct($config);
+        
+        // Set a base path for use by the view
+        $this->_basePath = JPATH_LIBRARIES;
 
+        // Set the default template search path
+        $this->_setPath('template', $this->_basePath . '/store/layout/item');
+    }
+    
     public function display($tpl = null)
     {
         
 
         $this->form  = $this->get('Form');
-
         $this->item  = $this->get('Item');
         $this->state = $this->get('State');
         $this->nameItem = $this->getModel()->nameItem;
-
         $this->nameItems = $this->getModel()->nameItems;
         $this->nameComponent = $this->getModel()->nameComponent;
 

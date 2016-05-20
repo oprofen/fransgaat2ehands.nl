@@ -1,6 +1,6 @@
 <?php
 /**
- * @package     Bookstore
+ * @package     Dvdstore
  * @subpackage  com_dvdstore
  *
  * @copyright   Copyright (C) 2005 - 2016 Open Source Matters, Inc. All rights reserved.

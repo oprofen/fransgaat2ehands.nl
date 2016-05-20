@@ -11,11 +11,13 @@ defined("_JEXEC") or die("Restricted access");
 JHtml::_('behavior.tooltip');
 JHtml::_('behavior.formvalidation');
 JHtml::_('formbehavior.chosen', 'select', JDEBUG,['disable_search_threshold' => 1]);
+
+JFactory::getDocument()->addScript(JURI::root() . 'media/store/assets/js/custom.js');
 ?>
 
 <script type="text/javascript">
     Joomla.submitbutton = function (task) {
-        if (task == 'book.cancel' || document.formvalidator.isValid(document.id('dvd-form'))) {
+        if (task == 'dvd.cancel' || document.formvalidator.isValid(document.id('dvd-form'))) {
             Joomla.submitform(task, document.getElementById('dvd-form'));
         }
     }

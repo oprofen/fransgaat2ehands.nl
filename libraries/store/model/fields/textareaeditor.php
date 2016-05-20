@@ -36,7 +36,7 @@ class JFormFieldTextareaeditor extends JFormFieldTextarea
     public function getInput()
     {
         $document = JFactory::getDocument();
-        $document->addScript('components/com_bookstore/assets/js/editor-script.js');
+        $document->addScript(JURI::root() . 'media/store/assets/js/editor-script.js');
 
         $href = JURI::base() . "index.php?option=" .JFactory::getApplication()->input->get('option')
             . "&view=editor&tmpl=component&elementid=" . $this->id . "\"";

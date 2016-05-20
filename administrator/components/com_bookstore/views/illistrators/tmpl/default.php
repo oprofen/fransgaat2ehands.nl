@@ -6,5 +6,5 @@
  */
 
 defined("_JEXEC") or die("Restricted access");
-require_once (JPATH_ADMINISTRATOR . '/components/com_bookstore/library/layout/default.php');
+require (JPATH_LIBRARIES . '/store/layout/default.php');
 ?>

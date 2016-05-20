@@ -82,7 +82,7 @@ class JFormFieldFourtext extends JFormFieldText
      */
     protected function getLayoutPaths()
     {
-        return ['components/com_bookstore/library/model/fields'];
+        return [JPATH_ROOT .'/libraries/store/model/fields/'];
     }
 
 

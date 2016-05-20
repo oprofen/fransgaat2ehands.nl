@@ -9,7 +9,7 @@
            readonly="true"/>
 
     <field name="asset_id" type="hidden" filter="unset"/>
-    <fieldset name="firstTab_1" addfieldpath="/administrator/components/com_bookstore/library/model/fields">
+    <fieldset name="firstTab_1" addfieldpath="/libraries/store/model/fields">
         <field name="title" type="textnew" label="JGLOBAL_TITLE"
                description="JFIELD_TITLE_DESC"
                size="70"
@@ -71,11 +71,8 @@
                 name="ean13"
                 label="COM_DVDSTORE_DVDS_FIELD_EAN13_LABEL"
                 filter="INTEGER"
-                type="fourtext"
+                type="text"
                 maxlength="13"
-                labelclass="label-width-2-1"
-                after="COM_DVDSTORE_DVDS_FIELD_EAN13_AFTER"
-                div_class_input="controls"
         >
         </field>
         <field
@@ -100,56 +97,6 @@
                 labelclass="label-width-2"
         >
         </field>
-
-        <field
-                name="object_type"
-                type="ajaxlist"
-                label="COM_DVDSTORE_OBJECT_TYPE_TITLE"
-                multiple="true"
-                database="object_type"
-                componentname="dvdstore"
-                plular_view_name="object_types"
-                multilanguage="true"
-                filter="INTEGER"
-        >
-            <option value=""></option>
-        </field>
-        <field
-                name="summary"
-                label="COM_DVDSTORE_DVDS_FIELD_SUMMARY_LABEL"
-                type="textareaeditor"
-                rows="4"
-                cols="5"
-                filter="RAW"
-        >
-        </field>
-        <field
-                name="dvd_extra"
-                label="COM_DVDSTORE_DVDS_FIELD_EXTRA_INFORMATION_EN_LABEL"
-                type="textareaeditor"
-                rows="4"
-                cols="5"
-                filter="RAW"
-        >
-        </field>
-
-        <field
-                name="translator"
-                type="ajaxlist"
-                label="COM_DVDSTORE_TRANSLATOR_TITLE"
-                database="translator"
-                componentname="dvdstore"
-                multiple="true"
-                plular_view_name="translators"
-                filter="INTEGER"
-                multilanguage="false"
-
-        >
-            <option value=""></option>
-        </field>
-
-    </fieldset>
-    <fieldset name="firstTab_2" addfieldpath="/administrator/components/com_bookstore/library/model/fields">
         <field
                 name="duration"
                 label="COM_DVDSTORE_DVDS_FIELD_DURATION_LABEL"
@@ -158,18 +105,24 @@
                 class="span12"
                 div_class_input="controls"
                 after="COM_DVDSTORE_DVDS_FIELD_DURATION_AFTER"
-                controlclass="input-prepend "
+                controlclass="input-append "
                 maxlength="7"
         >
         </field>
         <field
-                name="catalog"
-                label="COM_DVDSTORE_DVDS_FIELD_CATALOG_LABEL"
+                name="catalog_number"
+                label="COM_DVDSTORE_DVDS_FIELD_CATALOG_NUMBER_LABEL"
                 type="text"
                 filter="STRING"
                 maxlength="20"
         >
         </field>
+
+
+    </fieldset>
+    <fieldset name="firstTab_2" addfieldpath="/libraries/store/model/fields">
+
+
         <field
                 name="subcategory"
                 type="ajaxlist"
@@ -195,7 +148,8 @@
                 plular_view_name="languages"
                 multilanguage="true"
                 multiple="true"
-        >   <option value=""></option>
+        >
+            <option value=""></option>
         </field>
         <field
                 name="language"
@@ -213,6 +167,57 @@
             <option value=""></option>
 
         </field>
+        <field
+                name="object_type"
+                type="ajaxlist"
+                label="COM_DVDSTORE_OBJECT_TYPE_TITLE"
+                multiple="true"
+                database="object_type"
+                componentname="dvdstore"
+                plular_view_name="object_types"
+                multilanguage="true"
+                filter="INTEGER"
+        >
+            <option value=""></option>
+        </field>
+        <field
+                name="summary"
+                label="COM_DVDSTORE_DVDS_FIELD_SUMMARY_LABEL"
+                type="textareaeditor"
+                rows="4"
+                cols="5"
+                filter="RAW"
+        >
+        </field>
+        <field
+                name="dvd_extra"
+                label="COM_DVDSTORE_DVDS_FIELD_DVD_EXTRA_EN_LABEL"
+                type="textareaeditor"
+                rows="4"
+                cols="5"
+                filter="RAW"
+        >
+        </field>
+
+
+        <field name="images"
+               type="repeatableimg"
+               filter="raw"
+               label="COM_DVDSTORE_DVDS_FIELD_IMAGES_LABEL"
+               icon="images">
+            <fieldset hidden="true" name="images_modal" repeat="true">
+                <field
+                        name="image"
+                        type="media"
+                        label="COM_DVDSTORE_DVDS_FIELD_IMAGE_LABEL"
+                        preview="true"
+                        directory="localhost/fransgaat2ehands.nl/data_dvd"
+                />
+
+            </fieldset>
+        </field>
+    </fieldset>
+    <fieldset name="firstTab_3" addfieldpath="/libraries/store/model/fields">
         <field
                 name="overall_assessment"
                 type="list"
@@ -241,25 +246,6 @@
         >
             <option value=""></option>
         </field>
-
-        <field name="images"
-               type="repeatableimg"
-               filter="raw"
-               label="COM_DVDSTORE_DVDS_FIELD_IMAGES_LABEL"
-               icon="images">
-            <fieldset hidden="true" name="images_modal" repeat="true">
-                <field
-                        name="image"
-                        type="media"
-                        label="COM_DVDSTORE_DVDS_FIELD_IMAGE_LABEL"
-                        preview="true"
-                        directory="localhost\fransgaat2ehands.nl"
-                />
-
-            </fieldset>
-        </field>
-    </fieldset>
-    <fieldset name="firstTab_3" addfieldpath="/administrator/components/com_bookstore/library/model/fields">
         <field
                 name="width"
                 type="fourtext"
@@ -391,7 +377,7 @@
     </fieldset>
 
 
-    <fieldset name="SecondTab_1" addfieldpath="/administrator/components/com_bookstore/library/model/fields">
+    <fieldset name="SecondTab_1" addfieldpath="/libraries/store/model/fields">
         <field
                 name="undertitle"
                 label="COM_DVDSTORE_DVDS_FIELD_UNDERTITLE_LABEL"
@@ -408,7 +394,20 @@
                 filter="STRING"
         >
         </field>
+        <field
+                name="translator"
+                type="ajaxlist"
+                label="COM_DVDSTORE_TRANSLATOR_TITLE"
+                database="translator"
+                componentname="dvdstore"
+                multiple="true"
+                plular_view_name="translators"
+                filter="INTEGER"
+                multilanguage="false"
 
+        >
+            <option value=""></option>
+        </field>
         <field
                 name="upc12"
                 label="COM_DVDSTORE_DVDS_FIELD_UPC12_LABEL"
@@ -417,49 +416,22 @@
                 filter="INTEGER"
         >
         </field>
-
-
+        <field
+                name="matrix"
+                label="COM_DVDSTORE_DVDS_FIELD_MATRIX_LABEL"
+                type="text"
+                maxlength="50"
+                filter="STRING"
+        >
+        </field>
         <field
                 name="publication_date"
                 label="COM_DVDSTORE_DVDS_FIELD_PUBLICATION_DATE_LABEL"
                 type="calendar"
         >
         </field>
-        <field
-                name="serie"
-                label="COM_DVDSTORE_DVDS_FIELD_SERIE_LABEL"
-                type="text"
-                maxlength="30"
-                filter="STRING"
-        >
-        </field>
-        <field
-                name="serie_number"
-                label="COM_DVDSTORE_DVDS_FIELD_SERIE_NUMBER_LABEL"
-                type="text"
-                maxlength="5"
-                filter="INTEGER"
-        >
-        </field>
-        <field
-                name="blurb"
-                label="COM_DVDSTORE_DVDS_FIELD_BLURB_LABEL"
-                type="textareaeditor"
-                rows="4"
-                cols="5"
-                filter="RAW"
-        >
-        </field>
     </fieldset>
-    <fieldset name="SecondTab_2" addfieldpath="/administrator/components/com_bookstore/library/model/fields">
-        <field
-                name="catalog_number"
-                label="COM_DVDSTORE_DVDS_FIELD_CATALOG_NUMBER_LABEL"
-                type="text"
-                maxlength="20"
-                filter="STRING"
-        >
-        </field>
+    <fieldset name="SecondTab_2" addfieldpath="/libraries/store/model/fields">
         <field
                 name="barcode"
                 label="COM_DVDSTORE_DVDS_FIELD_BARCODE_LABEL"
@@ -516,7 +488,7 @@
         >
         </field>
     </fieldset>
-    <fieldset name="SecondTab_3" addfieldpath="/administrator/components/com_bookstore/library/model/fields">
+    <fieldset name="SecondTab_3" addfieldpath="/libraries/store/model/fields">
 
 
         <field
@@ -561,7 +533,7 @@
         </field>
 
     </fieldset>
-    <fieldset name="ThirdTab" addfieldpath="/administrator/components/com_bookstore/library/model/fields">
+    <fieldset name="ThirdTab">
         <field name="id" type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
                description="JGLOBAL_FIELD_ID_DESC" size="10" default="0"
                readonly="true"/>

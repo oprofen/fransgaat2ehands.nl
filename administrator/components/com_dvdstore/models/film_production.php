@@ -11,7 +11,7 @@ defined('_JEXEC') or die;
 
 
 /**
- * Item Model for a writer item.
+ * Item Model for a film production item.
  *
  * @since  1.6
  */

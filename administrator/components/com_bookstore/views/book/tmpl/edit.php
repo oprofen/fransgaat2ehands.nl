@@ -12,7 +12,7 @@ JHtml::_('behavior.tooltip');
 JHtml::_('behavior.formvalidation');
 JHtml::_('formbehavior.chosen', 'select', JDEBUG,['disable_search_threshold' => 1]);
 
-JFactory::getDocument()->addScript('components/com_bookstore/assets/js/custom.js');
+JFactory::getDocument()->addScript(JURI::root() . 'media/store/assets/js/custom.js');
 
 ?>
 
