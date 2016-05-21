@@ -35,7 +35,7 @@
 		<action name="core.edit" title="JACTION_EDIT" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
 		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
 	</section>
-	<section name="publisher">
+	<section name="distributor">
 		<action name="core.delete" title="JACTION_DELETE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
 		<action name="core.edit" title="JACTION_EDIT" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
 		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
@@ -66,6 +66,16 @@
 		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
 	</section>
 	<section name="country">
+		<action name="core.delete" title="JACTION_DELETE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+	</section>
+	<section name="written_by">
+		<action name="core.delete" title="JACTION_DELETE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
+	</section>
+	<section name="producer">
 		<action name="core.delete" title="JACTION_DELETE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
 		<action name="core.edit" title="JACTION_EDIT" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />
 		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_DVDSTORE_ACCESS_DELETE_DESC" />

@@ -203,7 +203,7 @@
                 name="book_language"
                 type="ajaxlist"
                 label="COM_BOOKSTORE_LANGUAGE_TITLE"
-                default="15"
+                default="2"
                 filter="INTEGER"
                 maxlength="3"
                 database="language"
@@ -224,7 +224,7 @@
                         type="media"
                         label="COM_BOOKSTORE_BOOKS_FIELD_IMAGE_LABEL"
                         preview="true"
-                        directory="localhost\fransgaat2ehands.nl"
+                        directory="data_book"
                 />
 
             </fieldset>
@@ -347,7 +347,7 @@
                 label="COM_BOOKSTORE_BOOKS_FIELD_COUNTRY_PRODUCTION_LABEL"
                 filter="INTEGER"
                 maxlength="3"
-				default="1"
+				default="2"
                 database="country"
                 plular_view_name="countries"
                 componentname="bookstore"

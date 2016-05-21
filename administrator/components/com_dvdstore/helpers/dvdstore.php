@@ -8,15 +8,15 @@
 defined("_JEXEC") or die("Restricted access");
 
 /**
- * Bookstore helper class.
+ * Dvdstore helper class.
  *
  * @package     Dvdstore
  * @subpackage  Helpers
  */
 class DvdstoreHelper extends JHelperContent
 {
-    public static $views = ['publishers', 'assessments', 'locations', 'directors', 'subcategories', 'film_productions',
-        'actors', 'object_types', 'purchase_codes', 'translators', 'languages','countries'];
+    public static $views = ['distributors', 'assessments', 'locations', 'directors', 'subcategories', 'film_productions',
+        'actors', 'object_types', 'purchase_codes', 'translators', 'languages','countries', 'producers', 'written_bys'];
 
     public static function addSubmenu($vName)
     {

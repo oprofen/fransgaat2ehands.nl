@@ -56,7 +56,7 @@ class StoreViewLegacyPlular extends JViewLegacy
         if ($this->getLayout() !== 'modal') {
 
             $this->addToolbar();
-            $helper = $this->nameComponent . Helper;
+            $helper = $this->nameComponent . 'Helper';
             $helper::addSubmenu($this->nameItems);
             $this->sidebar = JHtmlSidebar::render();
 

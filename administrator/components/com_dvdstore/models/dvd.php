@@ -50,6 +50,26 @@ class DvdstoreModelDvd extends StoreModelProductAdmin
             'databaseName' => 'translator',
             'componentNameForAssociation' => 'dvdstore',
             'associationName' => 'translator'
+        ],
+        [   'componentName' => 'dvdstore',
+            'databaseName' => 'producer',
+            'componentNameForAssociation' => 'dvdstore',
+            'associationName' => 'producer'
+        ],
+        [   'componentName' => 'dvdstore',
+            'databaseName' => 'distributor',
+            'componentNameForAssociation' => 'dvdstore',
+            'associationName' => 'distributor'
+        ],
+        [   'componentName' => 'dvdstore',
+            'databaseName' => 'written_by',
+            'componentNameForAssociation' => 'dvdstore',
+            'associationName' => 'written_by'
+        ],
+        [   'componentName' => 'dvdstore',
+            'databaseName' => 'film_production',
+            'componentNameForAssociation' => 'dvdstore',
+            'associationName' => 'film_production'
         ]
     ];
 }

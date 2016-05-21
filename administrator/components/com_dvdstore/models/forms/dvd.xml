@@ -44,14 +44,41 @@
             <option value=""></option>
         </field>
         <field
-                name="publisher"
+                name="distributor"
                 type="ajaxlist"
-                label="COM_DVDSTORE_PUBLISHER_TITLE"
-                database="publisher"
+                label="COM_DVDSTORE_DISTRIBUTOR_TITLE"
+                database="distributor"
                 componentname="dvdstore"
-                plular_view_name="publishers"
+                plular_view_name="distributors"
                 filter="INTEGER"
                 multilanguage="false"
+                multiple="true"
+        >
+            <option value=""></option>
+        </field>
+        <field
+                name="producer"
+                type="ajaxlist"
+                label="COM_DVDSTORE_PRODUCER_TITLE"
+                database="producer"
+                componentname="dvdstore"
+                plular_view_name="producers"
+                filter="INTEGER"
+                multilanguage="false"
+                multiple="true"
+        >
+            <option value=""></option>
+        </field>
+        <field
+                name="written_by"
+                type="ajaxlist"
+                label="COM_DVDSTORE_WRITTEN_BYS_TITLE"
+                database="written_by"
+                componentname="dvdstore"
+                plular_view_name="written_bys"
+                filter="INTEGER"
+                multilanguage="false"
+                multiple="true"
         >
             <option value=""></option>
         </field>
@@ -63,7 +90,8 @@
                 componentname="dvdstore"
                 plular_view_name="film_productions"
                 filter="INTEGER"
-                multilanguage="true"
+                multilanguage="false"
+                multiple="true"
         >
             <option value=""></option>
         </field>
@@ -140,7 +168,7 @@
                 name="sub_language"
                 type="ajaxlist"
                 label="COM_DVDSTORE_DVDS_SUB_LANGUAGE_TITLE"
-                default="15"
+                default="2"
                 filter="INTEGER"
                 maxlength="3"
                 database="language"
@@ -155,7 +183,7 @@
                 name="language"
                 type="ajaxlist"
                 label="COM_DVDSTORE_LANGUAGE_TITLE"
-                default="15"
+                default="1"
                 filter="INTEGER"
                 maxlength="3"
                 database="language"
@@ -211,7 +239,7 @@
                         type="media"
                         label="COM_DVDSTORE_DVDS_FIELD_IMAGE_LABEL"
                         preview="true"
-                        directory="localhost/fransgaat2ehands.nl/data_dvd"
+                        directory="data_dvd"
                 />
 
             </fieldset>
@@ -325,14 +353,6 @@
             <option value=""></option>
         </field>
         <field
-                name="purchase_serialnumber"
-                label="COM_DVDSTORE_DVDS_FIELD_PURCHASE_SERIALNUMBER_LABEL"
-                type="text"
-                filter="INTEGER"
-                maxlength="10"
-        >
-        </field>
-        <field
                 name="location"
                 type="ajaxlist"
                 label="COM_DVDSTORE_LOCATION_TITLE"
@@ -366,7 +386,7 @@
                 label="COM_DVDSTORE_DVDS_FIELD_COUNTRY_PRODUCTION_LABEL"
                 filter="INTEGER"
                 maxlength="3"
-                default="1"
+                default="2"
                 database="country"
                 plular_view_name="countries"
                 componentname="bookstore"
@@ -382,7 +402,7 @@
                 name="undertitle"
                 label="COM_DVDSTORE_DVDS_FIELD_UNDERTITLE_LABEL"
                 type="text"
-                maxlength="50"
+                maxlength="70"
                 filter="STRING"
         >
         </field>
@@ -390,7 +410,15 @@
                 name="original_title"
                 label="COM_DVDSTORE_DVDS_FIELD_ORIGINAL_TITLE_LABEL"
                 type="text"
-                maxlength="50"
+                maxlength="70"
+                filter="STRING"
+        >
+        </field>
+        <field
+                name="based_on"
+                label="COM_DVDSTORE_DVDS_FIELD_BASED_ON_TITLE_LABEL"
+                type="text"
+                maxlength="70"
                 filter="STRING"
         >
         </field>
@@ -447,6 +475,14 @@
                 type="text"
                 maxlength="20"
                 filter="STRING"
+        >
+        </field>
+        <field
+                name="purchase_serialnumber"
+                label="COM_DVDSTORE_DVDS_FIELD_PURCHASE_SERIALNUMBER_LABEL"
+                type="text"
+                filter="INTEGER"
+                maxlength="10"
         >
         </field>
         <field

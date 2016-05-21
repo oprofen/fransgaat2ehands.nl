@@ -32,7 +32,7 @@ class JFormFieldAjaxlist extends JFormFieldList
 
         $items = StoreHelper::getItems($this->getAttribute('database'),$this->getAttribute('componentname'),
             filter_var($this->getAttribute('multilanguage'), FILTER_VALIDATE_BOOLEAN));
-
+        $items = array_reverse($items);
         foreach ($items as $item) {
             // Create a new option object based on the <option /> element.
             $tmp = JHtml::_('select.option', $item->id, $item->title);
@@ -68,8 +68,12 @@ class JFormFieldAjaxlist extends JFormFieldList
         $ajaxScript[] =    "jQuery('#" . $this->id . " option').remove()";
         $ajaxScript[] = "var arr = ['<option value="."></option>'];";
         $ajaxScript[] = "for(var i = 0; i < data.length; i++){";
-        $ajaxScript[] = "if(valueArray && Array.isArray(valueArray)){";
+        $ajaxScript[] = "if(valueArray){";
+        $ajaxScript[] = "if(Array.isArray(valueArray)){";
         $ajaxScript[] = "var selected = (~valueArray.indexOf( data[i].id)) ? 'selected' : '' ;";
+        $ajaxScript[] = "} else {";
+        $ajaxScript[] = "var selected = (valueArray == data[i].id) ? 'selected' : '' ;";
+        $ajaxScript[] = "}";
         $ajaxScript[] = "} else {";
         $ajaxScript[] = "var selected = ''";
         $ajaxScript[] = "}";

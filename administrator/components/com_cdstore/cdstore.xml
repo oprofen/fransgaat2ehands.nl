@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.4" method="upgrade">
+	<name>com_cdstore</name>
+	<creationDate>2016 april 09</creationDate>
+	<author></author>
+	<authorEmail></authorEmail>
+	<authorUrl></authorUrl>
+	<copyright></copyright>
+	<license></license>
+	<version>1.0.0</version>
+	<description>COM_CDSTORE_XML_DESCRIPTION</description>
+	
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates</schemapath>
+		</schemas>
+	</update>
+	
+	<administration>
+		<menu link="index.php?option=com_cdstore">cdstore</menu>
+		<submenu>
+			<menu link="option=com_cdstore&amp;view=cds">COM_CDSTORE_CDS</menu>
+			<menu link="option=com_cdstore&amp;view=publishers">COM_CDSTORE_PUBLISHERS</menu>
+			<menu link="option=com_cdstore&amp;view=assessments">COM_CDSTORE_ASSESSMENTS</menu>
+			<menu link="option=com_cdstore&amp;view=locations">COM_CDSTORE_LOCATIONS</menu>
+			<menu link="option=com_cdstore&amp;view=artists">COM_CDSTORE_ARTISTS</menu>
+			<menu link="option=com_cdstore&amp;view=subcategories">COM_CDSTORE_SUBCATEGORIES</menu>
+			<menu link="option=com_cdstore&amp;view=music_producers">COM_CDSTORE_MUSIC_PRODUCERS</menu>
+			<menu link="option=com_cdstore&amp;view=labes">COM_CDSTORE_LABELS</menu>
+			<menu link="option=com_cdstore&amp;view=object_types">COM_CDSTORE_OBJECT_TYPES</menu>
+			<menu link="option=com_cdstore&amp;view=purchase_codes">COM_CDSTORE_PURCHASE_CODES</menu>
+			<menu link="option=com_cdstore&amp;view=languages">COM_CDSTORE_LANGUAGES</menu>
+			<menu link="option=com_cdstore&amp;view=countries">COM_CDSTORE_COUNTRIES</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>cdstore.php</filename>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>library</folder>
+			<folder>sql</folder>
+			<folder>views</folder>
+			<languages folder="admin">
+				<language tag="en-GB">language/en-GB.com_cdstore.ini</language>
+				<language tag="en-GB">language/en-GB.com_cdstore.sys.ini</language>
+				<language tag="nl-NL">language/nl-NL.com_cdstore.ini</language>
+				<language tag="nl-NL">language/nl-NL.com_cdstore.sys.ini</language>
+			</languages>
+		</files>
+
+	</administration>
+	
+	<updateservers>
+	</updateservers>
+</extension>

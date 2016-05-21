@@ -9,9 +9,9 @@ defined("_JEXEC") or die("Restricted access");
 
 
 /**
- * Books list view class.
+ * Dvds list view class.
  *
- * @package     Bookstore
+ * @package     Dvdstore
  * @subpackage  Views
  */
 class DvdstoreViewDvds extends StoreViewLegacyProductPlular

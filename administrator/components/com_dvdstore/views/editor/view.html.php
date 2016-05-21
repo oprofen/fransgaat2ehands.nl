@@ -9,7 +9,7 @@ defined("_JEXEC") or die("Restricted access");
 
 
 /**
- * Book item view class.
+ * DVD item view class.
  *
  * @package     Dvdstore
  * @subpackage  Views

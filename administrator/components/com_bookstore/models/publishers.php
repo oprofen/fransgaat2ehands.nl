@@ -10,7 +10,7 @@ defined("_JEXEC") or die("Restricted access");
 
 
 /**
- * List Model for publishers.
+ * List Model for Publishers.
  *
  * @package     Bookstore
  * @subpackage  Models

@@ -15,7 +15,7 @@ defined("_JEXEC") or die("Restricted access");
  * @package     Dvdstore
  * @subpackage  Models
  */
-class DvdstoreModelFilm_productions extends StoreModelListMultiLang
+class DvdstoreModelFilm_productions extends StoreModelList
 {
 }
 ?>

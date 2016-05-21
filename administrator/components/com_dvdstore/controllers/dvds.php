@@ -8,7 +8,7 @@
 defined("_JEXEC") or die("Restricted access");
 
 /**
- * Books list controller class.
+ * Dvds list controller class.
  *
  * @package     Dvdstore
  * @subpackage  Controllers

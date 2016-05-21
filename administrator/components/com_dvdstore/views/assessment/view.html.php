@@ -11,7 +11,7 @@ defined("_JEXEC") or die("Restricted access");
 /**
  * Assessment item view class.
  *
- * @package     Bookstore
+ * @package     DVDstore
  * @subpackage  Views
  */
 class DvdstoreViewAssessment extends StoreViewLegacyMultilangSingular
