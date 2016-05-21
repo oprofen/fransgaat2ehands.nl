@@ -308,6 +308,7 @@
                 filter="INTEGER"
                 componentname="bookstore"
                 multilanguage="false"
+                order="a.id DESC"
 
         >
             <option value=""></option>
@@ -321,6 +322,7 @@
                 filter="INTEGER"
                 componentname="bookstore"
                 multilanguage="true"
+                order="a.id DESC"
         >
             <option value=""></option>
         </field>

@@ -12,11 +12,6 @@
 			   class="input-xxlarge input-large-text"
 			   size="40"
 			   required="true"/>
-
-
-
-
-
 		<field
 				name="buttonspacer"
 				description="JGLOBAL_ACTION_PERMISSIONS_DESCRIPTION"

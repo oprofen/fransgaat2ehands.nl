@@ -349,6 +349,7 @@
                 plular_view_name="purchase_codes"
                 filter="INTEGER"
                 multilanguage="false"
+                order="a.id DESC"
         >
             <option value=""></option>
         </field>
@@ -361,6 +362,7 @@
                 plular_view_name="locations"
                 filter="INTEGER"
                 multilanguage="true"
+                order="a.id DESC"
         >
             <option value=""></option>
         </field>

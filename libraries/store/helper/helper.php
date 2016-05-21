@@ -21,7 +21,7 @@ class StoreHelper extends JHelperContent
      * if true, from the table will be got data which corresponds to the system language (Nl or En support)
      * @return array
      */
-    public static function getItems($collectionName, $componentName, $multiLanguage = false)
+    public static function getItems($collectionName, $componentName, $multiLanguage = false, $order = null)
     {
 
         if ($multiLanguage) {
@@ -44,7 +44,9 @@ class StoreHelper extends JHelperContent
 
         $query = $db->getQuery(true);
         $query->select("a.id, " . $title)->from("#__" . $componentName . "_" . $collectionName . " as a");
-
+        if ($order) {
+            $query->order($db->escape($order));
+        }
         $db->setQuery($query);
 
         try {
@@ -91,6 +93,7 @@ class StoreHelper extends JHelperContent
         return $item;
 
     }
+
     /**
      * Delete all rows of a certain id
      * @param array $tablesInfo Info about component name, database names
@@ -104,7 +107,7 @@ class StoreHelper extends JHelperContent
 
         foreach ($tablesInfo as $tableInfo) {
             $query = $db->getQuery(true)
-                ->delete($db->qn('#__'.$tableInfo['componentNameForAssociation'].'_association_' . $tableInfo['associationName']))
+                ->delete($db->qn('#__' . $tableInfo['componentNameForAssociation'] . '_association_' . $tableInfo['associationName']))
                 ->where($db->qn('book') . '=' . $id);
             $db->setQuery($query);
             $db->execute();
@@ -115,7 +118,7 @@ class StoreHelper extends JHelperContent
      * Insert data in association table
      *
      * @param array $tablesInfo Info about component name, database names
-     * @param JTable $jtable 
+     * @param JTable $jtable
      * @return void
      */
     public static function insertData($tablesInfo, $jtable)
@@ -134,7 +137,7 @@ class StoreHelper extends JHelperContent
                 if (count($values) > 0) {
                     $db = JFactory::getDbo();
                     $query = $db->getQuery(true)
-                        ->insert($db->qn('#__'. $tableInfo['componentNameForAssociation'] .'_association_' . $tableInfo['associationName']))
+                        ->insert($db->qn('#__' . $tableInfo['componentNameForAssociation'] . '_association_' . $tableInfo['associationName']))
                         ->columns($db->qn(['book', 'id']))
                         ->values($values);
                     $db->setQuery($query);

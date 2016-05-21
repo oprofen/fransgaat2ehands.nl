@@ -31,8 +31,7 @@ class JFormFieldAjaxlist extends JFormFieldList
         $options = array();
 
         $items = StoreHelper::getItems($this->getAttribute('database'),$this->getAttribute('componentname'),
-            filter_var($this->getAttribute('multilanguage'), FILTER_VALIDATE_BOOLEAN));
-        $items = array_reverse($items);
+            filter_var($this->getAttribute('multilanguage'), FILTER_VALIDATE_BOOLEAN), $this->getAttribute('order'));
         foreach ($items as $item) {
             // Create a new option object based on the <option /> element.
             $tmp = JHtml::_('select.option', $item->id, $item->title);

@@ -62,7 +62,7 @@
 		   label="JFIELD_RULES_LABEL"
 		   translate_label="false"
 		   filter="rules"
-		   component="com_bookstore"
+		   component="com_cdstore"
 		   section="language"
 		   validate="rules"
 	/>

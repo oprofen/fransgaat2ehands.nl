@@ -8,7 +8,7 @@
 defined("_JEXEC") or die("Restricted access");
 
 /**
- * Bookstore helper class.
+ * CDstore helper class.
  *
  * @package     Cdstore
  * @subpackage  Helpers

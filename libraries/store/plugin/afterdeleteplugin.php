@@ -62,14 +62,17 @@ class StoreAfterDeletePlugin extends JPlugin
                 }
                 break;
             case 'com_cdstore':
+            case 'com_vinylstore':
                 switch ($context[1]) {
                     case 'assessment':
-                    case 'publisher':
                     case 'object_type':
+                        $this->deleteLines($context[0], $context[1], $table->id);
+                        break;
                     case 'artist':
                     case 'subcategory':
                     case 'music_producer':
-                        $this->deleteLines($context[0], $context[1], $table->id);
+                        $this->deleteLines('cdstore', $context[1], $table->id);
+                        $this->deleteLines('vinylstore', $context[1], $table->id);
                         break;
                     case 'language':
                         $this->deleteLines('dvdstore', 'language', $table->id);

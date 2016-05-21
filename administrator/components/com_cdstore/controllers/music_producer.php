@@ -8,7 +8,7 @@
 defined("_JEXEC") or die("Restricted access");
 
 /**
- * Artist item controller class.
+ * Music producer item controller class.
  *
  * @package     Cdstore
  * @subpackage  Controllers
